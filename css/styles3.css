@@ -1,0 +1,155 @@
+body {
+    margin: 0;
+    background-color: #344e4e;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+}
+
+.main{
+    background: url(css-images/bg2.jpg) no-repeat center/cover;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header{
+    background: #f85656;
+    font-family: 'Michroma', sans-serif;
+}
+
+header::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.logo{
+    float: left;
+    padding: 5px 0;
+}
+
+nav{
+    float: right;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li{
+    display: inline-block;
+    margin-left: 20px;
+    padding-top: 15px;
+    position: relative;
+}
+
+nav a{
+    color: #000000;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+nav a:hover{
+    color: #ffffff;
+}
+
+.details-form{
+    margin-top: 5%;
+    margin-bottom: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.outerheader{
+    padding-top: 15px;
+    padding-left: 15px;
+    background-color: #f85656;
+    border: 1px solid;
+}
+
+.header{
+    background-color: #f85656;
+    text-align: left;
+    opacity: 90%;
+    line-height: 0.1;
+}
+
+.bigheader{
+    font-family: 'Courier New';
+    font-size: 48px;
+    color: white;
+}
+
+.smallheader{
+    font-family: 'Courier New';
+    font-size: 18px;
+    color: white;
+}
+
+.outerform-body{
+    padding: 15px;
+    background-color: peachpuff;
+    border-bottom: 1px solid;
+    border-left: 1px solid;
+    border-right: 1px solid;
+}
+
+.form-body{
+    padding-left: 15px;
+    font-family: Courier New;
+    font-size: 18px;
+}
+
+.company-contacts{
+    margin-top: 5%;
+    margin-left: 10%;
+}
+
+.company-contacts ul{
+    margin-left: 10 px;
+    padding: 5px;
+    list-style: none;
+}
+
+.company-contacts a{
+    color: #000000;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+h1{
+    color: #ffffff;
+    font-size: 4rem;
+    margin-bottom: 0;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #000000;
+    text-align: center;
+}
+
+h2{
+    color: #ffffff;
+    font-size: 1.5rem;
+    -webkit-text-stroke-width: 0.3px;
+    -webkit-text-stroke-color: #000000;
+}
+
+h6{
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+footer{
+    background-color: #6e6e6e;
+}
+
+footer .bottom-footer{
+    background-color: #f85656;
+    padding: 1rem;
+    border-top: #000000 1px solid;
+    text-align: center;
+}

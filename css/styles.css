@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    background-color: #344e4e;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+}
+
+.main{
+    background: url(css-images/bg.jpg) no-repeat center/cover;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header{
+    background: #f85656;
+    font-family: 'Michroma', sans-serif;
+}
+
+header::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.logo{
+    float: left;
+    padding: 5px 0;
+}
+
+nav{
+    float: right;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li{
+    display: inline-block;
+    margin-left: 20px;
+    padding-top: 15px;
+    position: relative;
+}
+
+nav a{
+    color: #000000;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+nav a:hover{
+    color: #ffffff;
+}
+
+#main{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.section-main{
+    margin-top: 25vh;
+    float: left;
+    width: 47%;
+    height: 300px;
+    text-align:right;
+}
+
+.logo-main{
+    margin-top: 25vh;
+    margin-left: 5%;
+    float: left;
+    width: 48%;
+    height: 300px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+h1{
+    color: #ffffff;
+    font-size: 3.5rem;
+    margin-bottom: 0;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #000000;
+}
+
+h2{
+    color: #ffffff;
+    font-size: 1.5rem;
+    -webkit-text-stroke-width: 0.3px;
+    -webkit-text-stroke-color: #000000;
+}
+
+a{
+    color: #eaff2b;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 18px;
+}
+
+footer .bottom-footer{
+    background-color: #f85656;
+    padding: 1rem;
+    text-align: center;
+}

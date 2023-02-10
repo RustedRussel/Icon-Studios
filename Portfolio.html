@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="css/styles2.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Michroma">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/x-icon" href="images/Logo.png">
+        <meta charset="UTF-8">
+        <title>Portfolio</title>
+
+        <script>
+            let slideIndex = 1;
+                showSlides(slideIndex);
+                
+                function plusSlides(n) {
+                  showSlides(slideIndex += n);
+                }
+                
+                function currentSlide(n) {
+                  showSlides(slideIndex = n);
+                }
+                
+                function showSlides(n) {
+                  let i;
+                  let slides = document.getElementsByClassName("mySlides");
+                  let dots = document.getElementsByClassName("demo");
+                  let captionText = document.getElementById("caption");
+                  if (n > slides.length) {slideIndex = 1}
+                  if (n < 1) {slideIndex = slides.length}
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";
+                  dots[slideIndex-1].className += " active";
+                  captionText.innerHTML = dots[slideIndex-1].alt;
+                }
+        </script>
+
+    </head>
+    <body>
+        
+        <div class="main">
+            <header>
+            <div class="container">
+
+                <img src="images/is.png" alt="logo" class="logo">
+                
+                <nav>
+                    <ul>
+                        <li><a href="Main Page.html">Main </a></li>
+
+                        <li><a href="About Us.html">About </a></li>
+
+                        <li><a href="Portfolio.html">Portfolio </a></li>
+
+                        <li><a href="Feedback.html">Feedback </a></li>
+
+                        <li><a href="Services.html">Services </a></li>
+
+                    </ul>
+
+                </nav>
+
+            </div>
+
+            </header>
+
+            <div class="body-title">
+                <br>
+                <h1> Services</h1>
+                <h2> See some Samples on the Gallery</h2>
+            </div>
+
+            <div>
+                <div class="maincontainer">
+                    <br><br><br><br><br><br>
+                <div class="mySlides">
+                  <div class="numbertext">1 / 6</div>
+                  <img src="images/Gallery.png" style="width:100%">
+                </div>
+              
+                <div class="mySlides">
+                  <div class="numbertext">2 / 6</div>
+                  <img src="images/Gallery1.png" style="width:100%">
+                </div>
+              
+                <div class="mySlides">
+                  <div class="numbertext">3 / 6</div>
+                  <img src="images/Gallery2.png" style="width:100%">
+                </div>
+                  
+                <div class="mySlides">
+                  <div class="numbertext">4 / 6</div>
+                  <img src="images/Gallery3.png" style="width:100%">
+                </div>
+              
+                <div class="mySlides">
+                  <div class="numbertext">5 / 6</div>
+                  <img src="images/Gallery4.png" style="width:100%">
+                </div>
+                  
+                <div class="mySlides">
+                  <div class="numbertext">6 / 6</div>
+                  <img src="images/Gallery5.png" style="width:100%">
+                </div>
+                  
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+              
+                <div class="caption-container">
+                  <p id="caption"></p>
+                </div>
+              
+                <div class="row">
+                  <div class="column">
+                    <img class="demo cursor" src="images/Gallery.png" style="width:100%" onclick="currentSlide(1)" alt="Local Museum">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="images/Gallery1.png" style="width:100%" onclick="currentSlide(2)" alt="7:00am Sunrise">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="images/Gallery2.png" style="width:100%" onclick="currentSlide(3)" alt="Me and the Golf Course">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="images/Gallery3.png" style="width:100%" onclick="currentSlide(4)" alt="Me at Immersion">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="images/Gallery4.png" style="width:100%" onclick="currentSlide(5)" alt="Portside Sunset">
+                  </div>    
+                  <div class="column">
+                    <img class="demo cursor" src="images/Gallery5.png" style="width:100%" onclick="currentSlide(6)" alt="Amvie's Calico Cat">
+                  </div>
+                </div>
+            </div>
+
+            <footer>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <div class="bottom-footer">
+                Trademarked and Copyrighted by Icon Studios Inc.
+
+                </div>
+            </footer>
+
+        </div>
+
+    </body>
+
+</html>    
