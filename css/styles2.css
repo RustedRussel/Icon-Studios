@@ -5,11 +5,6 @@ body {
     font-weight: 300;
 }
 
-.main{
-    background-color: #6e6e6e;
-}
-
-
 .container {
     width: 80%;
     margin: 0 auto;
@@ -83,82 +78,18 @@ h2{
     text-align: center;
 }
 
-.maincontainer{
-    margin-left: 2%;
-    margin-right: 2%;
-    margin-top: 2%;
-    margin-bottom: auto;
-    position: relative;
+.tablechart{
+    align-content: center;
 }
-  
-.mySlides{
-    display: none;
+
+.table-background{
+    background-color: #ffffff;
+    align-content: center;
+    align-self: center;
 }
-  
-.cursor{
-    cursor: pointer;
-}
-  
-.prev,
-.next {
-    cursor: pointer;
-    position: absolute;
-    top: 40%;
-    width: auto;
-    padding: 16px;
-    margin-top: -50px;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    -webkit-user-select: none;
-}
-  
-.next{
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-  
-.prev:hover,
-.next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-  
-.numbertext{
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: relative;
-    top: 0;
-    margin-bottom: -1.5%;
-}
-  
-.caption-container{
-    text-align: center;
-    background-color: #222;
-    padding: 2px 16px;
-    color: white;
-}
-  
-.row:after{
-    content: "";
-    display: table;
-    clear: both;
-}
-  
-.column{
-    float: left;
-    width: 16.66%;
-}
-  
-.demo{
-    opacity: 0.6;
-}
-  
-.active,
-.demo:hover{
-    opacity: 1;
+
+footer{
+    padding-top: 5%;
 }
 
 footer .bottom-footer{
